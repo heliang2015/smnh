@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/tab_content"
     android:layout_width="match_parent"
-    android:layout_height="251dp"
+    android:layout_height="205dp"
     tools:ignore="MissingConstraints"
     android:gravity="center"
     android:orientation="vertical"

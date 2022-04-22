@@ -2,23 +2,20 @@ package com.hl.ssnh.ui.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
-import com.hl.ssnh.R
 import com.hl.ssnh.databinding.ActivityHhBdBinding
-import com.hl.ssnh.databinding.ActivitySbfmBinding
+import com.hl.ssnh.databinding.ActivityTbTjBinding
 import com.hl.ssnh.ui.Pager2Adapter
 import com.hl.ssnh.ui.RecordCenterNavAdapter
-import com.hl.ssnh.ui.utils.INavigarorCallBack
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.CommonNavigator
 
-class HhBdActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityHhBdBinding
-    private var mTitleDataList = mutableListOf("财神赐福", "血的教训")
+class TbTjActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityTbTjBinding
+    private var mTitleDataList = mutableListOf("天将", "天兵")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityHhBdBinding.inflate(layoutInflater)
+        binding = ActivityTbTjBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.ivBack1.setOnClickListener {

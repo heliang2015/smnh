@@ -13,7 +13,7 @@ class GTJlActivity : AppCompatActivity() {
     var content = "1.铁律\n" +
             "股票操作一定是要遵守纪律操作的，纪律高于一切，单次的成功不代表多次的成功，不能瞎几把操作，已经太多太多血的教训；\n" +
             "\n" +
-            "1.牢记牢记股票市场就是一个战场，是一场博弈，各种尔虞我诈下套，你知道的利好，机构早已知道，你知道的利空，机构也早已知道." +
+            "1.牢记牢记股票市场就是一个战场，是一场博弈，是去抢别人口袋里面的钱，各种尔虞我诈下套，你知道的利好，机构早已知道，你知道的利空，机构也早已知道。机构就是想方设法把你口袋里面的钱抢走，所以要有纪律，只有记录才能保证你克服人性大概率的赚钱" +
             " 保住自己的本金，保住本金，保住本金才是王道，珍惜每一份挣来的利润100 也是钱；\n" +
             "\n" +
             "2.仓位控制高于一切，不管多好的股票，业绩再好，再牛逼单股最大仓位在10万；不能越涨越买，通策医疗，昭衍新药这些都是血的教训，折腾了一年多，股票都涨了40%自己还\n" +
@@ -40,6 +40,14 @@ class GTJlActivity : AppCompatActivity() {
         binding = ActivityGtjlBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        initView()
+
         binding.content.text = content
+    }
+
+    fun initView(){
+        binding.ivBack.setOnClickListener {
+            finish()
+        }
     }
 }

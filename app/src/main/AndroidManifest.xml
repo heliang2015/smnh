@@ -3,13 +3,15 @@
     package="com.hl.ssnh">
 
     <application
+        android:name=".BaseApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.逝水年华">
-        <activity android:name=".ui.home.HhBdActivity"></activity>
+        <activity android:name=".ui.home.TbTjActivity"></activity>
+        <activity android:name=".ui.home.HhBdActivity" />
         <activity android:name=".ui.home.SbfmActivity" />
         <activity android:name=".ui.home.GTJlActivity" />
         <activity
@@ -22,6 +24,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="640" />
     </application>
 
 </manifest>

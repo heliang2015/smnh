@@ -4,16 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.SbfmActivity">
+    tools:context=".ui.home.SbfmActivity"
+    tools:ignore="MissingConstraints">
+
+    <FrameLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/teal_700"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="钢铁纪律"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </FrameLayout>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/titlebar"
         tools:ignore="MissingConstraints">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <TextView
                 android:id="@+id/content"
                 android:layout_width="wrap_content"
@@ -22,9 +52,7 @@
         </LinearLayout>
 
 
-
     </ScrollView>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

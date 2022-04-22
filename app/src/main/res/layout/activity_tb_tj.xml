@@ -10,7 +10,7 @@
 
 
     <FrameLayout
-        android:id="@+id/titlebar"
+        android:id="@+id/titlebar1"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@color/teal_700"
@@ -18,7 +18,7 @@
 
 
         <FrameLayout
-            android:id="@+id/iv_back"
+            android:id="@+id/iv_back1"
             android:layout_width="30dp"
             android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
@@ -38,13 +38,13 @@
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="15dp"
             android:gravity="center"
-            android:text="上兵伐谋"
+            android:text="天兵天降"
             android:textColor="@color/white"
             android:textSize="17sp" />
     </FrameLayout>
 
     <net.lucode.hackware.magicindicator.MagicIndicator
-        android:id="@+id/magicindicator"
+        android:id="@+id/magicindicator1"
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:background="#CCFFFFFF" />
@@ -55,7 +55,7 @@
         android:background="#99FFFFFF"/>
 
     <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/view_pager"
+        android:id="@+id/view_pager1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />

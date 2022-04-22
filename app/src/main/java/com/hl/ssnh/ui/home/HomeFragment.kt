@@ -44,26 +44,27 @@ class HomeFragment : Fragment() {
         initView()
     }
 
-    fun initView(){
+    fun initView() {
         var datas = mutableListOf<HomeEntity>()
-        datas.add(HomeEntity(R.mipmap.icon_gtjler,"钢铁纪律"))
-        datas.add(HomeEntity(R.mipmap.icon_sbfm1,"上兵伐谋"))
-        datas.add(HomeEntity(R.mipmap.icon_hhb,"红黑榜单"))
-        datas.add(HomeEntity(R.mipmap.icon_shsj,"十虎上将"))
+        datas.add(HomeEntity(R.mipmap.icon_gtjler, "钢铁纪律"))
+        datas.add(HomeEntity(R.mipmap.icon_sbfm1, "上兵伐谋"))
+        datas.add(HomeEntity(R.mipmap.icon_hhb, "红黑榜单"))
+        datas.add(HomeEntity(R.mipmap.icon_shsj, "天兵天将"))
 
         var adapter = TzAdapter(datas)
-        _binding?.recylerview!!.layoutManager = GridLayoutManager(requireContext(),2,GridLayoutManager.VERTICAL,false)
+        _binding?.recylerview!!.layoutManager =
+            GridLayoutManager(requireContext(), 2, GridLayoutManager.VERTICAL, false)
 
 
-        adapter.setOnItemChildClickListener{ adapter, view, position ->
+        adapter.setOnItemChildClickListener { adapter, view, position ->
             if (position == 0) {
-                startActivity(Intent(requireActivity(),GTJlActivity::class.java))
+                startActivity(Intent(requireActivity(), GTJlActivity::class.java))
             } else if (position == 1) {
                 startActivity(Intent(requireActivity(), SbfmActivity::class.java))
             } else if (position == 2) {
                 startActivity(Intent(requireActivity(), HhBdActivity::class.java))
-            } else {
-
+            } else if (position == 3) {
+                startActivity(Intent(requireActivity(), TbTjActivity::class.java))
             }
         }
 
