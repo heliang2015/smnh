@@ -131,7 +131,7 @@ public class TypefaceUtil {
      */
     public static void setTextViewFontToDIN(Context context,TextView textView){
         try{
-            Typeface fromAsset = Typeface.createFromAsset(context.getAssets(), "fonts/DINAlternateBold.ttf");
+            Typeface fromAsset = Typeface.createFromAsset(context.getAssets(), "fonts/12.ttf");
             textView.setTypeface(fromAsset);
         }catch (Exception e){
             e.printStackTrace();

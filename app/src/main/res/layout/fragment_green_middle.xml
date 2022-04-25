@@ -12,12 +12,139 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
             <TextView
-                android:id="@+id/content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="[形态一]:"
+                android:textColor="@color/teal_700"
+                android:textSize="16sp"
+                android:textStyle="bold"
                 tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@mipmap/green_bottom_02" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textSize="13sp"
+                tools:ignore="MissingConstraints"
+                style="@style/content_"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="描述:"
+                android:textColor="#222222"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/describ1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="缠绕期间是指绿线在中间或四线归一，这时候股价有可能开启新一轮的上涨，也有可能开启新一轮的下跌。这时候要非常小心。不能认为从高点一路跌下来的，然后突破后就一定上扬，很多会开启新一轮的大跌。"
+                style="@style/content_"/>
+
+            <TextView
+                android:id="@+id/buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="买入点:"
+                android:textColor="#222222"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/buycontent1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/content_"
+                android:layout_marginTop="10dp"
+                />
+
+
+            <TextView
+                android:id="@+id/sale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="卖出点："
+                android:textColor="#222222"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/salecontent1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                style="@style/content_" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@drawable/bg_line"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="@dimen/dp_10"/>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="[形态二]:"
+                android:textColor="@color/teal_700"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@mipmap/green_bottom_03" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="[形态三]:"
+                android:textColor="@color/teal_700"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@mipmap/green_bottom_04" />
+
+
         </LinearLayout>
 
 
