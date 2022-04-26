@@ -31,8 +31,8 @@ class TbTjActivity : AppCompatActivity() {
     }
 
     fun initViewPager() {
-        var up = RecordRedFragment()
-        var middle = RecordGreenFragment()
+        var up = TianBingFragment.newInstance(0)
+        var middle = TianBingFragment.newInstance(1)
         val listFragments = listOf(up, middle)
         var pagerAdapter = Pager2Adapter(this, listFragments)
         binding.viewPager1.adapter = pagerAdapter
