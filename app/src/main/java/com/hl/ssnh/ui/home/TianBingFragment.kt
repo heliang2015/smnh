@@ -13,7 +13,7 @@ import com.hl.ssnh.ui.home.placeholder.PlaceholderContent
 import com.hl.ssnh.ui.model.GpInfoModel
 
 /**
- * A fragment representing a list of Items.
+ * A fragment representing a list of  Items.
  */
 class TianBingFragment : Fragment() {
 
