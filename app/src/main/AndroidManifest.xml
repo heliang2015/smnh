@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.逝水年华">
-        <activity android:name=".ui.home.TbTjActivity"></activity>
+        <activity android:name=".ui.detail.CompanyDetailActivity"></activity>
+        <activity android:name=".ui.home.TbTjActivity" />
         <activity android:name=".ui.home.HhBdActivity" />
         <activity android:name=".ui.home.SbfmActivity" />
         <activity android:name=".ui.home.GTJlActivity" />

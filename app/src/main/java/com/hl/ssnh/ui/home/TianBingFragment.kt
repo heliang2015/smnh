@@ -1,5 +1,6 @@
 package com.hl.ssnh.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
@@ -8,7 +9,10 @@ import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.hl.ssnh.R
+import com.hl.ssnh.ui.callback.ClickCallBack
+import com.hl.ssnh.ui.detail.CompanyDetailActivity
 import com.hl.ssnh.ui.home.placeholder.PlaceholderContent
 import com.hl.ssnh.ui.model.GpInfoModel
 
@@ -41,7 +45,9 @@ class TianBingFragment : Fragment() {
 
         if (view is RecyclerView) {
             with(view) {
-                adapter = MyTianBingRecyclerViewAdapter(datas)
+                adapter = MyTianBingRecyclerViewAdapter(datas, ClickCallBack {
+                    startActivity(Intent(requireActivity(),CompanyDetailActivity::class.java))
+                })
             }
         }
         return view

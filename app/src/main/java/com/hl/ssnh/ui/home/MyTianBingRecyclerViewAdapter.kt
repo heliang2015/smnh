@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import com.hl.ssnh.R
 import com.hl.ssnh.databinding.FragmentItemBinding
+import com.hl.ssnh.ui.callback.ClickCallBack
 import com.hl.ssnh.ui.home.placeholder.PlaceholderContent.PlaceholderItem
 import com.hl.ssnh.ui.model.GpInfoModel
 
@@ -16,7 +17,8 @@ import com.hl.ssnh.ui.model.GpInfoModel
  * TODO: Replace the implementation with code for your data type.
  */
 class MyTianBingRecyclerViewAdapter(
-    private val values: List<GpInfoModel>
+    private val values: List<GpInfoModel>,
+    var callBack:ClickCallBack
 ) : RecyclerView.Adapter<MyTianBingRecyclerViewAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -32,6 +34,11 @@ class MyTianBingRecyclerViewAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = values[position]
         holder.idView.text = item.gpName
+        if(callBack != null){
+            holder.itemView.setOnClickListener {
+                callBack.callBack(position)
+            }
+        }
     }
 
     override fun getItemCount(): Int = values.size
